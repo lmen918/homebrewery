@@ -9,6 +9,7 @@ using [Markdown][markdown-url]. It is distributed under the terms of the [MIT Li
 [markdown-url]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ## Quick Start
+
 The easiest way to get started using The Homebrewery is to use it
 [on our website][homebrewery-url]. The code is open source, so feel free to
 clone it and tinker with it. If you want to make changes to the code, you can run
@@ -18,6 +19,7 @@ below.
 [homebrewery-url]: https://homebrewery.naturalcrit.com
 
 ### Installation
+
 First, install three programs that The Homebrewery requires to run and retrieve
 updates:
 
@@ -43,7 +45,7 @@ updates:
 acknowledged: true,
 insertedId: ObjectId("63c2fce9e5ac5a94fe2410cf")
 }`
-   
+
 1. install [git](https://git-scm.com/downloads) (select the option that allows Git to run from the command prompt).
 
 Checkout the repo ([documentation][github-clone-repo-docs-url]):
@@ -94,6 +96,7 @@ Please see the docs here: [README.DOCKER.md](./README.DOCKER.md)
 Please see the docs here: [README.FreeBSD.md](./README.FREEBSD.md)
 
 ### Standalone PHB Stylesheet
+
 If you just want the stylesheet that is generated to make pages look like they
 are from the Player's Handbook, you will find it in the
 [phb.standalone.css](./phb.standalone.css) file.
@@ -102,6 +105,7 @@ If you are developing locally and would like to generate your own, follow the
 above steps and then run `npm run phb`.
 
 ## Issues, Suggestions, and Bugs
+
 If you run into any issues using The Homebrewery or have suggestions for
 improvement, please submit an issue [on GitHub][repo-issues-url].
 You can also get help for issues on the subreddit [r/homebrewery][subreddit-url]
