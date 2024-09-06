@@ -1,9 +1,11 @@
-version: '2'
 services:
   mongodb:
     image: mongo:latest
     volumes:
       - mongodata:/data/db
+    networks:
+      - homebrewery-network
+
   homebrewery:
     build:
       context: .
@@ -13,5 +15,14 @@ services:
       MONGODB_URI: mongodb://mongodb/homebrewery
     ports:
       - "8000:8000"
+    depends_on:
+      - mongodb
+    networks:
+      - homebrewery-network
+
 volumes:
   mongodata:
+
+networks:
+  homebrewery-network:
+    driver: bridge
